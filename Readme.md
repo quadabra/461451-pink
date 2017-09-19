@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Максим Грушников](https://up.htmlacademy.ru/adaptive/12/user/461451).
-* Наставник: `Неизвестно`.
+* Наставник: [Василика Климова](https://up.htmlacademy.ru/adaptive/12/user/415397).
 
 ---
 
