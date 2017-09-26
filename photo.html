@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="photo-page">
+<header class="page-header">
+  <nav class="site-navigation">
+    <img class="page-header__logo" src="img/__page/logo.svg" alt="Логотип PINK" width="100" height="20">
+    <button class="site-navigation__toggle">Меню</button>
+    <ul class="site-navigation__list nav-list">
+      <li class="nav-list__item">
+        <a class="nav-list__item-link">Главная</a>
+      </li>
+      <li class="nav-list__item">
+        <a class="nav-list__item-link" href="#">Фотографии</a>
+      </li>
+      <li class="nav-list__item">
+        <a class="nav-list__item-link" href="#">Конкурс</a>
+      </li>
+      <li class="nav-list__item">
+        <a class="nav-list__item-link" href="#">Html Academy</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="page-main">
+  <h1 class="page-main__title">Фотографии пользователей</h1>
+  <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
+    ваших?</p>
+  <ul class="photos-list">
+    <li class="photos-list__item">
+      <figure class="photos-list__image-container"><img class="photos-list__image photos-list__image_top" src="img/__photos-list/1.jpg" alt="Панорама дня">
+        <figcaption class="photos-list__text">
+          <h3 class="photos-list__name">Анна<span class="photos-list__time">(5 минут назад)</span></h3>
+          <p class="photos-list__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!</p>
+          <span class="photos-list__likes">Нравится: 215</span>
+        </figcaption>
+      </figure>
+    </li>
+    <li class="photos-list__item">
+      <figure class="photos-list__image-container"><img class="photos-list__image" src="img/__photos-list/2.jpg" alt="Фото">
+        <figcaption class="photos-list__text">
+          <h3 class="photos-list__name">Левон<span class="photos-list__time">(5 часов назад)</span></h3>
+          <p class="photos-list__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <span class="photos-list__likes">Нравится: 356</span>
+        </figcaption>
+      </figure>
+    </li>
+    <li class="photos-list__item">
+      <figure class="photos-list__image-container"><img class="photos-list__image" src="img/__photos-list/3.jpg" alt="Фото">
+        <figcaption class="photos-list__text">
+          <h3 class="photos-list__name">Антон<span class="photos-list__time">(12 часов назад)</span></h3>
+          <p class="photos-list__text">Соседи будут рады!</p>
+          <span class="photos-list__likes">Нравится: 666</span>
+        </figcaption>
+      </figure>
+    </li>
+    <li class="photos-list__item">
+      <figure class="photos-list__image-container"><img class="photos-list__image" src="img/__photos-list/4.jpg" alt="Фото">
+        <figcaption class="photos-list__text">
+          <h3 class="photos-list__name">Борис<span class="photos-list__time">(20 часов назад)</span></h3>
+          <p class="photos-list__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <span class="photos-list__likes">Нравится: 215</span>
+        </figcaption>
+      </figure>
+    </li>
+    <li class="photos-list__item">
+      <figure class="photos-list__image-container"><img class="photos-list__image" src="img/__photos-list/5.jpg" alt="Фото">
+        <figcaption class="photos-list__text">
+          <h3 class="photos-list__name">Сергей<span class="photos-list__time">(25 часов назад)</span></h3>
+          <p class="photos-list__text">Самая кубанская в мире!</p>
+          <span class="photos-list__likes">Нравится: 4</span>
+        </figcaption>
+      </figure>
+    </li>
+    <li class="photos-list__item">
+      <figure class="photos-list__image-container"><img class="photos-list__image" src="img/__photos-list/6.jpg" alt="Фото">
+        <figcaption class="photos-list__text">
+          <h3 class="photos-list__name">Максим<span class="photos-list__time">(40 часов назад)</span></h3>
+          <p class="photos-list__text">Где снег-то?</p>
+          <span class="photos-list__likes">Нравится: 150</span>
+        </figcaption>
+      </figure>
+    </li>
+    <li class="photos-list__item">
+      <figure class="photos-list__image-container"><img class="photos-list__image" src="img/__photos-list/7.jpg" alt="Фото">
+        <figcaption class="photos-list__text">
+          <h3 class="photos-list__name">Надежда<span class="photos-list__time">(45 часов назад)</span></h3>
+          <p class="photos-list__text">Всем GM и взаимные лайки!</p>
+          <span class="photos-list__likes">Нравится: 2560</span>
+        </figcaption>
+      </figure>
+    </li>
+  </ul>
+  <section class="photo-upload">
+    <h2 class="photo-upload__title">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</h2>
+    <form class="photo-upload__form photo-post" action="upload" method="post">
+      <img class="photo-post__preview" src="img/__photo-post/1.jpg" alt="фото для загрузки" width="280" height="374">
+      <p class="photo-post__filters filter">
+        <button class="filter__btn_crop" type="button"><span class="visually-hidden">Размер фото</span></button>
+        <button class="filter__btn_fill" type="button"><span class="visually-hidden">Цветовой фильтр</span></button>
+        <button class="filter__btn_contrast" type="button"><span class="visually-hidden">Контраст</span></button>
+        <input class="filter__slider" type="range">
+      </p>
+      <input class="photo-upload__input" type="file" name="fileupload" hidden>
+      <button class="photo-upload__btn photo-upload__btn_submit" type="submit">Запостить</button>
+      <button class="photo-upload__btn photo-upload__btn_reset" type="reset">Отмена</button>
+    </form>
+  </section>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__logo">
+    <!--inline svg -->
+  </div>
+  <ul class="page-footer__btn-list social">
+    <li class="social__item">
+      <a class="social__btn social__btn_tw" href="#"><span class="visually-hidden">twitter</span></a>
+    </li>
+    <li class="social__item">
+      <a class="social__btn social__btn_fb" href="#"><span class="visually-hidden">facebook</span></a>
+    </li>
+    <li class="social__item">
+      <a class="social__btn social__btn_yt" href="#"><span class="visually-hidden">youtube</span></a>
+    </li>
+  </ul>
+  <address class="page-footer__copyright">
+    <p class="copyright__text">Разработано</p>
+    <a href="http://htmlacademy.ru">
+      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+        <path fill="#2E368F"
+              d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+      </svg>
+      <span class="visually-hidden">HTML Academy</span></a>
+  </address>
+</footer>
+</body>
+</html>
