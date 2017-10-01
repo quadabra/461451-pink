@@ -1,6 +1,7 @@
 .contacts-block {
   width: 87.5%;
-  margin: 40px auto 0 auto;
+  margin: 0 auto;
+  padding-top: 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +10,7 @@
 .contacts-block__title {
   width: 80%;
   font-size: 24px;
+  line-height: 30px;
   font-weight: 300;
   text-align: center;
 }
@@ -21,18 +23,23 @@
 }
 
 .contacts-block__item {
+  width: 250px;
   text-align: center;
 }
 
 .contacts-block__list-title {
+  margin: 10px auto 2px auto;
   font-size: 18px;
   font-weight: 700;
   color: @fontcolor1;
 }
 
 .contacts-block__list-text {
+  margin: 0;
+  margin-bottom: 10px;
   font-size: 24px;
   font-weight: 300;
+  line-height: 32px;
   color: @fontcolor2;
   text-decoration: none;
 }
@@ -44,8 +51,3 @@
   text-decoration: none;
 }
 
-.contacts-block__map {
-  width: 320px;
-  height: 421px;
-  background-image: url("../img/bg-map-mobile@1x.png");
-}
