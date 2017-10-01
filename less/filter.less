@@ -1,0 +1,33 @@
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.filter__btn {
+  display: block;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.filter__icon {
+  &_crop,
+  &_fill,
+  &_contrast {
+    fill: #b4b8be;
+  }
+}
+
+.filter__btn_crop:hover .filter__icon_crop,
+.filter__btn_fill:hover .filter__icon_fill,
+.filter__btn_contrast:hover .filter__icon_contrast,
+.filter__btn_crop:focus .filter__icon_crop,
+.filter__btn_fill:focus .filter__icon_fill,
+.filter__btn_contrast:focus .filter__icon_contrast {
+  fill: @fontcolor2;
+}
+
+.filter__slider {
+  flex-basis: 90%;
+}

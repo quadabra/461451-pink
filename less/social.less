@@ -1,0 +1,39 @@
+.social {
+  .no-list;
+  width: 180px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: 51px;
+  height: 51px;
+  border: 3px solid #f1f2f3;
+  border-radius: 50%;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    border-color: #243344;
+  }
+
+  &:active {
+    border-color: rgba(36, 51, 68, 0.3);
+    opacity: 0.3;
+  }
+}
+
+.social__btn_fb,
+.social__btn_tw,
+.social__btn_yt {
+  fill: #d32456;
+}
+
+.social__youtube {
+  position: relative;
+  left: 2px;
+}
