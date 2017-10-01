@@ -40,20 +40,16 @@
     <form class="form-main__form" action="http://htmlacademy.ru/echo.html" method="post">
       <p class="form-main__form-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
         бонусную карту!</p>
-      <fieldset class="form-name">
-        <div class="container form-name__container">
+        <fieldset class="form-name">
           <legend class="visually-hidden">Как вас зовут?</legend>
           <label class="form-name__label text-label" for="surname">Фамилия:</label>
           <input class="form-name__input text-input" type="text" id="surname" placeholder="Укажите фамилию *" required>
           <label class="form-name__label text-label" for="first-name">Имя:</label>
-          <input class="form-name__input text-input" type="text" id="first-name" placeholder="Введите ваше имя *"
-                 required>
+          <input class="form-name__input text-input" type="text" id="first-name" placeholder="Введите ваше имя *" required>
           <label class="form-name__label text-label" for="middle-name">Отчество:</label>
           <input class="form-name__input text-input" type="text" id="middle-name" placeholder="Ну и отчество тоже">
-        </div>
-      </fieldset>
-      <fieldset class="form-achievements">
-        <div class="container form-achievements__container">
+        </fieldset>
+        <fieldset class="form-achievements">
           <legend class="form-achievements__legend">Ваши безбашенные достижения в путешествии</legend>
           <label class="form-achievements__label" for="selfie">
             <input class="form-achievements__input" type="checkbox" name="selfie" id="selfie" checked>
@@ -79,17 +75,15 @@
             <input class="form-achievements__input" type="checkbox" name="hotel" id="hotel">
             <span class="form-achievements__text">Разгромил отель</span>
           </label>
-        </div>
-      </fieldset>
-      <fieldset class="form-contacts container">
-        <legend class="form-contacts__legend">Контактная информация</legend>
-        <label class="form-contacts__label text-label" for="phone">Номер телефона</label>
-        <input class="form-contacts__input text-input" type="text" id="phone" placeholder="Номер, пожалуйста">
-        <label class="form-contacts__label text-label" for="email">адрес почты</label>
-        <input class="form-contacts__input text-input" type="email" id="email" placeholder="Введите почту *" required>
-      </fieldset>
-      <fieldset class="form-app">
-        <div class="container form-app__container">
+        </fieldset>
+        <fieldset class="form-contacts">
+          <legend class="form-contacts__legend">Контактная информация</legend>
+          <label class="form-contacts__label text-label" for="phone">Номер телефона</label>
+          <input class="form-contacts__input text-input" type="text" id="phone" placeholder="Номер, пожалуйста">
+          <label class="form-contacts__label text-label" for="email">адрес почты</label>
+          <input class="form-contacts__input text-input" type="email" id="email" placeholder="Введите почту *" required>
+        </fieldset>
+        <fieldset class="form-app">
           <legend class="form-app__legend">С каким приложением путешествовали?</legend>
           <label class="form-app__label" for="ios">
             <input class="form-app__radio" type="radio" name="system" value="ios" id="ios" checked>
@@ -103,15 +97,15 @@
             <input class="form-app__radio" type="radio" name="system" value="windows" id="windows">
             <span class="form-app__text">Windows Phone</span>
           </label>
-        </div>
-      </fieldset>
+        </fieldset>
       <fieldset class="form-text">
         <legend class="visually-hidden">Ваше сообщение</legend>
         <label class="form-text__label text-label" for="textarea">Опишите свои эмоции</label>
         <textarea class="form-text__textarea textarea-input" name="form-text" cols="30" rows="5" id="textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
       <button class="btn-form-submit form__button">Отправить форму</button>
-      <i class="form-main__bottom-text"><span class="form-main__bottom-text form-main__bottom-text_pink">*</span> — обязательные поля</i>
+      <i class="form-main__bottom-text"><span class="form-main__bottom-text form-main__bottom-text_pink">*</span> —
+        обязательные поля</i>
     </form>
   </div>
 </main>
