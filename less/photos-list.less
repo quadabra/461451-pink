@@ -1,14 +1,14 @@
 .photos-list {
   .no-list;
+  padding-top: 29px;
 }
 
 .photos-list__item {
-  padding-bottom: 20px;
+  margin-top: 20px;
 }
 
 .photos-list__image-container {
-  padding: 0;
-  margin: 0;
+  .reset;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,9 +21,13 @@
 .photos-list__description {
   .container;
   background-color: #f3f3f3;
+  padding-bottom: 20px;
 }
 
 .photos-list__name {
+  margin-top: 22px;
+  margin-left: 18px;
+  margin-bottom: 0;
   font-size: 14px;
   font-weight: 700;
   color: @fontcolor1;
@@ -37,14 +41,35 @@
 }
 
 .photos-list__text {
+  margin-top: 4px;
+  margin-left: 18px;
+  margin-bottom: 0;
+  width: 260px;
   font-size: 14px;
   font-weight: 300;
+  line-height: 24px;
   color: @fontcolor1;
 }
 
 .photos-list__likes {
+  display: block;
+  position: relative;
+  margin-left: 50px;
+  margin-top: 10px;
   font-size: 12px;
   line-height: 24px;
   color: @fontcolor2;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -32px;
+    top: 6px;
+    height: 15px;
+    width: 15px;
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
 }

@@ -1,14 +1,27 @@
 .filter {
+  width: 87.5%;
+  box-sizing: border-box;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  padding-bottom: 22px;
 }
 
 .filter__btn {
+  margin: 0 auto;
+  flex-shrink: 0;
   display: block;
   border: none;
   background: none;
   outline: none;
+}
+
+.filter__btn:first-of-type {
+  margin-left: 10px;
+}
+
+.filter__btn:last-of-type {
+  margin-right: 22px;
 }
 
 .filter__icon {
@@ -29,5 +42,6 @@
 }
 
 .filter__slider {
-  flex-basis: 90%;
+  flex-basis: 100%;
+  margin-top: 23px;
 }
