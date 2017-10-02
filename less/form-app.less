@@ -1,18 +1,67 @@
 .form-app {
-  min-height: 340px;
+  .reset;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: none;
+  padding-top: 37px;
+}
+
+.form-app__list {
+  .no-list;
+  width: 87.5%;
+  margin: -3px auto 0 auto;
+  min-height: 270px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  border: none;
-  background-color: #f2f2f2;
 }
 
 .form-app__legend {
+  margin: 0 auto;
   width: 240px;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   align-self: center;
   color: @fontcolor2;
+}
+
+.form-app__label {
+  display: block;
+  margin-left: 70px;
+  margin-top: 45px;
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+  color: @fontcolor1;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e6e6e6;
+    border-radius: 50%;
+    background-color: #ffffff;
+    left: -70px;
+    top: -6px;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: @fontcolor2;
+    left: -58px;
+    top: 6px;
+  }
+}
+
+.form-app__input:checked ~ .form-app__label::after {
+  display: block;
 }
