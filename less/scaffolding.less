@@ -6,6 +6,8 @@
 @btncolorgreenactive: @btncolorgreenhover;
 @btncolordisabled: #e5e5e5;
 @graycolor: #f3f3f3;
+@tablet-width: 660px;
+@desktop-width: 960px;
 
 body {
   margin: 0;
@@ -37,8 +39,12 @@ body {
 
 .wrapper {
   min-width: 320px;
-  max-width: 649px;
+  max-width: 660px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 660px;
+  }
 }
 
 .container {
@@ -49,4 +55,12 @@ body {
 img {
   width: 100%;
   height: auto;
+}
+
+.index-page > .page-footer {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }

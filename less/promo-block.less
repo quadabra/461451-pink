@@ -67,3 +67,36 @@
   position: relative;
   top: 40px;
 }
+
+@media (min-width: @tablet-width) {
+  .promo-block__header-text {
+    font-size: 40px;
+    width: 94%;
+
+    &:last-of-type {
+      width: 55%;
+    }
+  }
+
+  .promo-block__list-container {
+    display: flex;
+  }
+
+  .promo-block__list {
+    width: 50%;
+  }
+
+  .promo-block__image-list {
+    order: -1;
+    width: 50%;
+  }
+
+  .promo-block__list-title {
+    text-align: left;
+  }
+
+  .promo-block__list-text {
+    text-align: left;
+    margin: 0;
+  }
+}

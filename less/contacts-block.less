@@ -19,6 +19,7 @@
   .no-list;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -49,4 +50,21 @@
   font-weight: 300;
   color: @fontcolor2;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-block__title {
+    font-size: 40px;
+    width: 376px;
+  }
+
+  .contacts-block__contacts {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contacts-block__item:last-child {
+    flex-basis: 90%;
+    margin: 0 auto;
+  }
 }

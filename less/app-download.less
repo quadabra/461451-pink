@@ -1,12 +1,16 @@
 .app-download {
-  display: flex;
-  flex-direction: column;
   background-color: #17212e;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: left 110px, 50% -65px;
+  background-position: left 109px, 50% -67px;
   overflow: visible;
   min-height: 563px;
+}
+
+.app-download__container {
+  .container;
+  display: flex;
+  flex-direction: column;
 }
 
 .app-download__btn {
@@ -33,4 +37,35 @@
   font-weight: 300;
   line-height: 24px;
   text-align: center;
+}
+
+.app-download__title {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .app-download {
+    min-height: 619px;
+    background-position: right 109px, 50% -109px;
+  }
+
+  .app-download__container {
+    margin: 0;
+    padding-top: 74px;
+    width: 50%;
+  }
+
+  .app-download__btn {
+    margin-top: 0;
+  }
+
+  .app-download__title {
+    margin: 0 auto;
+    display: block;
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 300;
+    width: 186px;
+  }
 }

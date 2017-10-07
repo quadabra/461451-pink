@@ -3,7 +3,7 @@
 }
 
 .page-footer__container {
-  width: 87.5%;
+  .container;
   padding-top: 39px;
   display: flex;
   flex-direction: column;
@@ -32,4 +32,12 @@
 .page-footer__copyright-link {
   margin-top: 6px;
   margin-left: 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__container {
+    width: 94%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
