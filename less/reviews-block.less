@@ -39,3 +39,44 @@
   margin-top: 15px;
   text-align: center;
 }
+
+.reviews-block__author_hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews-block__author_hidden {
+    display: block;
+    font-size: 14px;
+    color: @fontcolor1;
+    font-weight: 400;
+  }
+
+  .reviews-block__author {
+    font-size: 20px;
+    color: #000000;
+  }
+
+  .reviews-block__list-item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews-block__author_hidden {
+    display: block;
+    font-size: 18px;
+    color: @fontcolor1;
+    font-weight: 400;
+  }
+
+  .reviews-block__author {
+    font-size: 24px;
+    color: #000000;
+  }
+
+  .reviews-block__comment {
+    max-width: 680px;
+  }
+}

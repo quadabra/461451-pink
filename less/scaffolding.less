@@ -45,11 +45,24 @@ body {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     width: 660px;
   }
+
+  @media (min-width: @desktop-width) {
+    min-width: 960px;
+    max-width: 1200px;
+  }
 }
 
 .container {
   width: 87.5%;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 94%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
 }
 
 img {
@@ -62,5 +75,13 @@ img {
 
   @media (min-width: @tablet-width) {
     display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    background-image: url("../img/custom/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
   }
 }

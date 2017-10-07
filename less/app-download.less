@@ -46,7 +46,8 @@
 @media (min-width: @tablet-width) {
   .app-download {
     min-height: 619px;
-    background-position: right 109px, 50% -109px;
+    background-image: url("../img/custom/back-tablet@1x.jpg");
+    background-position: center -109px;
   }
 
   .app-download__container {
@@ -67,5 +68,14 @@
     line-height: 50px;
     font-weight: 300;
     width: 186px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .app-download {
+    min-height: 742px;
+    background-image: url("../img/custom/back-desktop.jpg");
+    background-size: cover;
+    background-position: center -110px;
   }
 }

@@ -17,7 +17,7 @@
         </a>
         <button class="site-navigation__toggle">Меню</button>
       </div>
-      <ul class="site-navigation__list nav-list">
+      <ul class="site-navigation__list">
         <li class="site-navigation__list-item">
           <a class="site-navigation__list-link">Главная</a>
         </li>
@@ -28,7 +28,7 @@
           <a class="site-navigation__list-link" href="form.html">Конкурс</a>
         </li>
         <li class="site-navigation__list-item">
-          <a class="site-navigation__list-link" href="http://htmlacademy.ru">Html Academy</a>
+          <a class="site-navigation__list-link" href="http://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -80,17 +80,24 @@
           <li class="promo-block__image-item">
             <img class="promo-block__image" src="img/iphone-screen-mobile@1x.png" alt="Smile" width="157" height="320">
           </li>
+          <li class="promo-block__image-item">
+            <img class="promo-block__image" src="img/iphone-screen-mobile@1x.png" alt="Smile" width="157" height="320">
+          </li>
+          <li class="promo-block__image-item">
+            <img class="promo-block__image" src="img/iphone-screen-mobile@1x.png" alt="Smile" width="157" height="320">
+          </li>
         </ul>
       </div>
     </section>
     <section class="effect">
-      <img class="effect__image" src="" alt="часики свг">
+      <div class="effect__image-container">
+        <img class="effect__image" src="img/custom/24.png" alt="часики свг" width="298" height="345">
+      </div>
       <div class="effect__container">
         <h2 class="effect__title">Эффект  на 24 часа!</h2>
         <p class="effect__text">  Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится  целые сутки!  </p>
         <a class="effect__link" href="#">Узнать больше об исследовании</a>
       </div>
-
     </section>
     <section class="reviews-block">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
@@ -102,23 +109,27 @@
         <input class="reviews-block__slider-input third-slide" type="radio" name="rev-slider" value="third-slide" id="third-slide">
         <label for="third-slide"></label>
       </div>
-      <ul class="reviews-block__list">
-        <li class="reviews-block__list-item">
-          <h3 class="reviews-block__author">Николай Петров</h3>
-          <p class="reviews-block__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </li>
-        <li class="reviews-block__list-item">
-          <h3 class="reviews-block__author">Николай Петров</h3>
-          <p class="reviews-block__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </li>
-        <li class="reviews-block__list-item">
-          <h3 class="reviews-block__author">Николай Петров</h3>
-          <p class="reviews-block__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </li>
-      </ul>
+      <div class="reviews-block_list-container">
+        <button class="reviews-block__button_back" type="button">back</button>
+        <ul class="reviews-block__list">
+          <li class="reviews-block__list-item">
+            <h3 class="reviews-block__author">Николай Петров<span class="reviews-block__author_hidden">25лет, водитель трамвая</span></h3>
+            <p class="reviews-block__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+          <li class="reviews-block__list-item">
+            <h3 class="reviews-block__author">Николай Петров<span class="reviews-block__author_hidden">25лет, водитель трамвая</span></h3>
+            <p class="reviews-block__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+          <li class="reviews-block__list-item">
+            <h3 class="reviews-block__author">Николай Петров<span class="reviews-block__author_hidden">25лет, водитель трамвая</span></h3>
+            <p class="reviews-block__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+        </ul>
+        <button class="reviews-block__button_next" type="button">next</button>
+      </div>
     </section>
     <section class="price-list">
       <h2 class="visually-hidden">Прайс-лист</h2>
