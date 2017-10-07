@@ -1,4 +1,5 @@
 .app-download {
+  .wrapper;
   background-color: #17212e;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
@@ -46,8 +47,8 @@
 @media (min-width: @tablet-width) {
   .app-download {
     min-height: 619px;
-    background-image: url("../img/custom/back-tablet@1x.jpg");
-    background-position: center -109px;
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/custom/back-tablet@1x.jpg");
+    background-position: 80% center, center -109px;
   }
 
   .app-download__container {
@@ -74,8 +75,8 @@
 @media (min-width: @desktop-width) {
   .app-download {
     min-height: 742px;
-    background-image: url("../img/custom/back-desktop.jpg");
-    background-size: cover;
-    background-position: center -110px;
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/custom/back-desktop.jpg");
+    background-size: auto, cover;
+    background-position: 80% center, center -110px;
   }
 }

@@ -44,6 +44,10 @@
   display: none;
 }
 
+.reviews-block__button {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .reviews-block__author_hidden {
     display: block;
@@ -78,5 +82,18 @@
 
   .reviews-block__comment {
     max-width: 680px;
+  }
+
+  .reviews-block__button {
+    display: block;
+  }
+
+  .reviews-block_list-container {
+    .container;
+    display: flex;
+  }
+
+  .reviews-block__slider-container {
+    display: none;
   }
 }

@@ -47,8 +47,7 @@ body {
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 960px;
-    max-width: 1200px;
+    min-width: 1200px;
   }
 }
 
@@ -57,10 +56,11 @@ body {
   margin: 0 auto;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    width: 94%;
+    width: 620px;
   }
 
   @media (min-width: @desktop-width) {
+    padding: 0 10px;
     width: 940px;
   }
 }
@@ -75,13 +75,5 @@ img {
 
   @media (min-width: @tablet-width) {
     display: block;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-header {
-    background-image: url("../img/custom/back-desktop.jpg");
-    background-repeat: no-repeat;
-    background-position-x: center;
   }
 }

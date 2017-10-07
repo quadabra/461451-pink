@@ -4,6 +4,10 @@
   flex-wrap: wrap;
 }
 
+.navigation-wrapper {
+  .wrapper;
+}
+
 .site-navigation__container {
   width: 100%;
   height: 70px;
@@ -24,6 +28,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center 0;
   background-repeat: no-repeat;
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/custom/back-tablet@1x.jpg");
   }
@@ -56,6 +61,12 @@
 }
 
 @media (min-width: @desktop-width) {
+  .navigation-wrapper {
+    background-image: url("../img/custom/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+
   .site-navigation {
     .container;
     display: flex;
