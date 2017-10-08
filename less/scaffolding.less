@@ -8,6 +8,7 @@
 @graycolor: #f3f3f3;
 @tablet-width: 660px;
 @desktop-width: 960px;
+@midgray: @btncolordisabled;
 
 body {
   margin: 0;
@@ -43,11 +44,13 @@ body {
   margin: 0 auto;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    width: 660px;
+    min-width: 660px;
+    max-width: 960px;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 1200px;
+    max-width: 1200px;
+    min-width: 960px;
   }
 }
 
@@ -56,12 +59,13 @@ body {
   margin: 0 auto;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    width: 620px;
+    width: 94%;
   }
 
   @media (min-width: @desktop-width) {
+    box-sizing: border-box;
     padding: 0 10px;
-    width: 940px;
+    width: 960px;
   }
 }
 

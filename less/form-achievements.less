@@ -9,8 +9,8 @@
 
 .form-achievements__list {
   .no-list;
-  margin: -6px auto 0 auto;
-  width: 87.5%;
+  .container;
+  margin-top: -6px;
   min-height: 538px;
   display: flex;
   flex-direction: column;
@@ -75,4 +75,41 @@
 
 .form-achievements__input:checked ~ .form-achievements__label::after {
   display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .form-achievements {
+    .container;
+    border: 2px solid @midgray;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .form-achievements__legend {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+  }
+
+  .form-achievements__label {
+    margin-left: 121px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-achievements__label {
+    margin-left: 70px;
+  }
+
+  .form-achievements__list {
+    width: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form-achievements__list > li {
+    flex-basis: 33%;
+  }
 }

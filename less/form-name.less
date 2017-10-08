@@ -7,8 +7,7 @@
 
 .form-name__list {
   .no-list;
-  margin: 0 auto;
-  width: 87.5%;
+  .container;
   display: flex;
   flex-direction: column;
   min-height: 385px;
@@ -22,4 +21,35 @@
 
 .form-name__input {
   margin-top: 12px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-name {
+    .container;
+  }
+
+  .form-name__list-item {
+    display: flex;
+  }
+
+  .form-name__input {
+    margin-left: 20px;
+  }
+
+  .form-name__label {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-name {
+    width: auto;
+    flex-basis: 435px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .form-name__list {
+    width: auto;
+  }
 }
