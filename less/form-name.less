@@ -1,8 +1,55 @@
 .form-name {
-  min-height: 385px;
+  .reset;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  border: none;
+}
+
+.form-name__list {
+  .no-list;
+  .container;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  border: none;
+  min-height: 385px;
+}
+
+.form-name__label {
+  display: block;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.form-name__input {
+  margin-top: 12px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-name {
+    .container;
+  }
+
+  .form-name__list-item {
+    display: flex;
+  }
+
+  .form-name__input {
+    margin-left: 20px;
+  }
+
+  .form-name__label {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-name {
+    width: auto;
+    flex-basis: 435px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .form-name__list {
+    width: auto;
+  }
 }

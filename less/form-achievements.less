@@ -1,10 +1,19 @@
 .form-achievements {
-  height: 604px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 35px;
+  border: none;
+  background-color: @graycolor;
+}
+
+.form-achievements__list {
+  .no-list;
+  .container;
+  margin-top: -6px;
+  min-height: 538px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  border: none;
-  background-color: #f3f3f3;
 }
 
 .form-achievements__text {
@@ -15,10 +24,92 @@
 
 .form-achievements__legend {
   width: 240px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  align-self: center;
   color: @fontcolor2;
+}
+
+.form-achievements__input {
+  display: none;
+}
+
+.form-achievements__label {
+  display: block;
+  position: relative;
+  margin-left: 70px;
+  margin-top: 52px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e6e6e6;
+    background-color: #ffffff;
+    left: -70px;
+    top: -5px;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 8px;
+    border: 2px solid @fontcolor2;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    left: -61px;
+    top: 6px;
+  }
+}
+
+.form-achievements__input:checked ~ .form-achievements__label::after {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .form-achievements {
+    .container;
+    border: 2px solid @midgray;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .form-achievements__legend {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+  }
+
+  .form-achievements__label {
+    margin-left: 121px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-achievements__label {
+    margin-left: 70px;
+  }
+
+  .form-achievements__list {
+    width: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form-achievements__list > li {
+    flex-basis: 33%;
+  }
 }

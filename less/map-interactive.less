@@ -1,6 +1,34 @@
 .map-interactive {
-  width: 100%;
-  height: 200px;
+  .wrapper;
+  min-height: 200px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.map-interactive__link {
+  display: block;
+  width: 100%;
+  min-height: 200px;
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .map-interactive {
+    min-height: 375px;
+  }
+
+  .map-interactive__link {
+    min-height: 375px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map-interactive {
+    min-height: 500px;
+  }
+
+  .map-interactive__link {
+    min-height: 500px;
+  }
 }

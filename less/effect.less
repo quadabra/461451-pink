@@ -1,0 +1,53 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: block;
+    .wrapper;
+  }
+
+  .effect__container {
+    .container;
+    display: flex;
+  }
+
+  .effect__text-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .effect__title {
+    margin: 0;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+  }
+
+  .effect__text {
+    font-size: 14px;
+    color: @fontcolor1;
+  }
+
+  .effect__link {
+    font-size: 14px;
+    color: @fontcolor2;
+  }
+
+  .effect__image {
+    width: 298px;
+    height: 345px;
+  }
+
+  .effect__image-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    background-color: @graycolor;
+  }
+}

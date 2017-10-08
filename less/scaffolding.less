@@ -5,6 +5,10 @@
 @btncolorgreenhover: #159c5e;
 @btncolorgreenactive: @btncolorgreenhover;
 @btncolordisabled: #e5e5e5;
+@graycolor: #f3f3f3;
+@tablet-width: 660px;
+@desktop-width: 960px;
+@midgray: @btncolordisabled;
 
 body {
   margin: 0;
@@ -14,6 +18,11 @@ body {
 
 .no-list() {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reset() {
   margin: 0;
   padding: 0;
 }
@@ -30,16 +39,40 @@ body {
 }
 
 .wrapper {
-  width: 320px;
+  min-width: 320px;
+  max-width: 660px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    min-width: 660px;
+    max-width: 960px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    min-width: 960px;
+  }
 }
 
 .container {
   width: 87.5%;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 94%;
+  }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    padding: 0 10px;
+    width: 960px;
+  }
 }
 
-fieldset {
-  margin: 0;
-  padding: 0;
+.index-page > .page-footer {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
