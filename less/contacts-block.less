@@ -56,19 +56,32 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contacts-block {
+    min-height: 360px;
+    padding-top: 45px;
+  }
+
   .contacts-block__title {
     font-size: 40px;
+    line-height: 49px;
+    margin: 0;
     width: 376px;
   }
 
   .contacts-block__contacts {
+    margin-top: 31px;
+    width: 570px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   .contacts-block__item:last-child {
-    flex-basis: 90%;
-    margin: 0 auto;
+    flex-basis: 50%;
+    margin: 23px auto 0 auto;
+  }
+
+  .contacts-block__link {
+    line-height: 36px;
   }
 }
 
