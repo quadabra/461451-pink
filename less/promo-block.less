@@ -131,18 +131,25 @@
 }
 
 @media (min-width: @desktop-width) {
+  .promo-block {
+    background-image: linear-gradient(175.6deg, white 417px, #f3f3f3 417px, #f3f3f3 100%);
+    min-height: 880px;
+  }
+
   .promo-block__header-text {
     font-size: 50px;
     width: 94%;
-    line-height: 65px;
+    line-height: 48px;
 
     &:last-of-type {
       width: 55%;
+      line-height: 59px;
     }
   }
 
   .promo-block__header {
     background-image: none;
+    padding-top: 43px;
   }
 
   .promo-block__list-container {
@@ -154,19 +161,27 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .promo-block__list-item {
-    width: 33%;
+    width: 32%;
   }
 
   .promo-block__list-title {
     text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    width: 240px;
+    margin-top: 40px;
   }
 
   .promo-block__list-text {
     text-align: center;
-    margin: 0 auto;
+    margin: 25px auto 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+    width: 230px;
   }
 
   .promo-block__image-list {
