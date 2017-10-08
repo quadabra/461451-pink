@@ -1,5 +1,8 @@
 .photos-list {
   .no-list;
+  .container;
+  display: flex;
+  flex-direction: column;
   padding-top: 29px;
 }
 
@@ -14,8 +17,38 @@
   align-items: center;
 }
 
-.photos-list__description {
+.photos-list__image {
+  width: 100%;
+  height: auto;
+}
+
+.photos-list__panorama {
+  margin: 0;
+  width: 100%;
+}
+
+.photos-list__panorama-container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.photos-list__panorama-description {
   .container;
+  padding: 0;
+  padding-bottom: 20px;
+  background-color: #f3f3f3;
+}
+
+.photos-list__panorama-image {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.photos-list__description {
+  width: 100%;
   background-color: #f3f3f3;
   padding-bottom: 20px;
 }
@@ -67,5 +100,25 @@
     width: 15px;
     background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photos-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photos-list__item {
+    width: auto;
+    flex-basis: 48.25%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos-list__item {
+    width: auto;
+    flex-basis: 30%;
   }
 }
