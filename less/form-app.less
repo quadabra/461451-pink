@@ -69,18 +69,36 @@
 @media (min-width: @tablet-width) {
   .form-app {
     .container;
+    box-sizing: border-box;
+    margin-top: 0;
+    padding-top: 15px;
+    min-height: 299px;
     border: 2px solid @midgray;
     background-color: #ffffff;
-    margin-top: 30px;
     position: relative;
   }
 
   .form-app__legend {
     position: absolute;
-    top: -20px;
+    top: -10px;
     left: 50%;
+    width: 365px;
     transform: translateX(-50%);
     background-color: #ffffff;
+  }
+
+  .form-app__label {
+    margin-left: 100px;
+
+    &::before {
+      left: -60px;
+      top: -5px;
+    }
+
+    &::after {
+      left: -48px;
+      top: 7px;
+    }
   }
 }
 

@@ -80,21 +80,40 @@
 @media (min-width: @tablet-width) {
   .form-achievements {
     .container;
+    box-sizing: border-box;
+    margin-top: 65px;
+    padding-top: 10px;
+    min-height: 553px;
     border: 2px solid @midgray;
     background-color: transparent;
     position: relative;
   }
 
+  .form-achievements__list {
+    width: 100%;
+  }
+
   .form-achievements__legend {
     position: absolute;
-    top: -20px;
+    top: -10px;
     left: 50%;
+    width: 435px;
     transform: translateX(-50%);
     background-color: #ffffff;
   }
 
   .form-achievements__label {
-    margin-left: 121px;
+    margin-left: 118px;
+
+    &::before {
+      left: -60px;
+      top: -4px;
+    }
+
+    &::after {
+      left: -51px;
+      top: 7px;
+    }
   }
 }
 
@@ -104,7 +123,7 @@
   }
 
   .form-achievements__list {
-    width: auto;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
   }

@@ -25,19 +25,31 @@
 
 @media (min-width: @tablet-width) {
   .form-name {
-    .container;
+    min-height: 0;
+  }
+
+  .form-name__list {
+    padding-top: 43px;
+    min-height: 366px;
   }
 
   .form-name__list-item {
     display: flex;
+    margin-bottom: 40px;
+  }
+
+  .form-name__list-item:last-child {
+    margin-bottom: 10px;
   }
 
   .form-name__input {
     margin-left: 20px;
+    padding-top: 7px;
   }
 
   .form-name__label {
     margin-left: 0;
+    margin-top: 35px;
   }
 }
 
