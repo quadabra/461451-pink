@@ -75,16 +75,27 @@
 
 @media (min-width: @desktop-width) {
   .form-contacts {
-    flex-basis: 100%;
+    width: 940px;
+    min-height: 162px;
+    margin-top: 6px;
   }
 
   .form-contacts__list {
+    margin-top: 42px;
     width: auto;
+    min-height: 0;
     flex-direction: row;
     align-items: center;
   }
 
   .form-contacts__list-item {
-    flex-basis: 50%;
+    .reset;
+    margin-left: 38px;
+    padding-right: 32px;
+    width: auto;
+  }
+
+  .form-contacts__input {
+    width: 375px;
   }
 }

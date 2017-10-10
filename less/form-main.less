@@ -63,6 +63,10 @@
   display: none;
 }
 
+.form-main__bottom-text_hidden {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .form-main__form-header {
     min-height: 297px;
@@ -134,6 +138,7 @@
 
 @media (min-width: @desktop-width) {
   .form-main__form-header {
+    min-height: 251px;
     background-image: url("../img/custom/back-desktop.jpg");
     background-position: center -110px;
     flex-basis: 100%;
@@ -145,8 +150,24 @@
     flex-wrap: wrap;
   }
 
+  .form-main__form-title {
+    width: 750px;
+    margin-top: 30px;
+  }
+
   .form-main__form-text {
-    flex-basis: 100%;
+    width: 760px;
+    margin-top: 91px;
+    line-height: 31px;
     padding-bottom: 50px;
+  }
+
+  .form-main__bottom-container {
+    .reset;
+    padding-top: 65px;
+  }
+
+  .form-main__bottom-text_hidden {
+    display: inline;
   }
 }
