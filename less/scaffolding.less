@@ -10,6 +10,21 @@
 @desktop-width: 960px;
 @midgray: @btncolordisabled;
 
+@font-face {
+  font-family: "Open Sans sans-serif normal";
+  src: url("/fonts/opensans.woff2"), url("/fonts/opensans.woff");
+}
+
+@font-face {
+  font-family: "Open Sans sans-serif light";
+  src: url("/fonts/opensanslight.woff2"), url("/fonts/opensanslight.woff");
+}
+
+@font-face {
+  font-family: "Open Sans sans-serif bold";
+  src: url("/fonts/opensansbold.woff2"), url("/fonts/opensansbold.woff");
+}
+
 body {
   margin: 0;
   min-width: 320px;
@@ -43,7 +58,7 @@ body {
   max-width: 660px;
   margin: 0 auto;
 
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     min-width: 660px;
     max-width: 960px;
   }
