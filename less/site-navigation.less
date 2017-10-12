@@ -17,22 +17,13 @@
   align-items: center;
   background-color: @nav-bg;
   overflow: visible;
-
-  @media (min-width: @tablet-width) {
-    height: 109px;
-  }
 }
 
 .site-navigation__container_minimized {
-  background-color: rgba(36, 51, 68, 0.3);
+  background-color: rgb(36, 51, 68);
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center 0;
   background-repeat: no-repeat;
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/custom/back-tablet@1x.jpg");
-    background-size: cover;
-  }
 }
 
 .site-navigation__list_hidden {
@@ -61,12 +52,27 @@
   border-top: 1px solid lighten(@nav-bg, 10%);
 }
 
+@media (min-width: @tablet-width) {
+  .site-navigation__container {
+    height: 109px;
+  }
+
+  .site-navigation {
+    width: 100%;
+  }
+
+  .site-navigation__container_minimized {
+    background-image: url("../img/custom/back-tablet@1x.jpg");
+    background-size: cover;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .navigation-wrapper {
     background-image: url("../img/custom/back-desktop.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
-    background-size: cover;
+    background-size: auto;
   }
 
   .site-navigation {
@@ -78,6 +84,7 @@
   }
 
   .site-navigation__list {
+    margin-top: 23px;
     flex-basis: auto;
     min-width: 620px;
     margin-left: auto;

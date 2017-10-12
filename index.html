@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body class="index-page">
 <header class="page-header">
@@ -37,21 +36,23 @@
 <main class="page-main">
   <h1 class="visually-hidden">Приложение Pink</h1>
   <section class="app-download">
-    <div class="app-download__container">
-      <h2 class="app-download__title">Взгляните на жизнь иначе!</h2>
-      <a class="app-download__btn download-button" href="#">Скачать приложение</a>
-      <ul class="app-download__list">
-        <li>
-          <a class="app-download__list-link" href="#"><img src="img/logo-apple.svg" alt="appstore" width="47" height="57"></a>
-        </li>
-        <li>
-          <a class="app-download__list-link" href="#"><img src="img/logo-android.svg" alt="play market" width="42" height="47"></a>
-        </li>
-        <li>
-          <a class="app-download__list-link" href="#"><img src="img/logo-microsoft.svg" alt="windows market" width="44" height="42"></a>
-        </li>
-      </ul>
-      <p class="app-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    <div class="container">
+      <div class="app-download__container">
+        <h2 class="app-download__title">Взгляните на жизнь иначе!</h2>
+        <a class="app-download__btn download-button" href="#">Скачать приложение</a>
+        <ul class="app-download__list">
+          <li>
+            <a class="app-download__list-link" href="#"><img src="img/logo-apple.svg" alt="appstore" width="47" height="57"></a>
+          </li>
+          <li>
+            <a class="app-download__list-link" href="#"><img src="img/logo-android.svg" alt="play market" width="42" height="47"></a>
+          </li>
+          <li>
+            <a class="app-download__list-link" href="#"><img src="img/logo-microsoft.svg" alt="windows market" width="44" height="42"></a>
+          </li>
+        </ul>
+        <p class="app-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </div>
   </section>
   <section class="promo-block">
@@ -113,23 +114,26 @@
         <input class="reviews-block__slider-input third-slide" type="radio" name="rev-slider" value="third-slide" id="third-slide">
         <label for="third-slide"></label>
       </div>
-      <div class="reviews-block_list-container">
+      <div class="reviews-block__list-container">
         <button class="reviews-block__button_back reviews-block__button" type="button">back</button>
         <ul class="reviews-block__list">
           <li class="reviews-block__list-item">
             <h3 class="reviews-block__author">Николай Петров<span class="reviews-block__author_hidden">25лет, водитель трамвая</span></h3>
-            <p class="reviews-block__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="reviews-block__comment"><span class="reviews-block__element-hidden">&laquo;</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии<span
+                class="reviews-block__element-hidden">&raquo;</span></p>
           </li>
           <li class="reviews-block__list-item">
             <h3 class="reviews-block__author">Николай Петров<span class="reviews-block__author_hidden">25лет, водитель трамвая</span></h3>
-            <p class="reviews-block__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="reviews-block__comment"><span class="reviews-block__element-hidden">&laquo;</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии<span
+                class="reviews-block__element-hidden">&raquo;</span></p>
           </li>
           <li class="reviews-block__list-item">
             <h3 class="reviews-block__author">Николай Петров<span class="reviews-block__author_hidden">25лет, водитель трамвая</span></h3>
-            <p class="reviews-block__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="reviews-block__comment"><span class="reviews-block__element-hidden">&laquo;</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span
+                class="reviews-block__element-hidden">&raquo;</span></p>
           </li>
         </ul>
         <button class="reviews-block__button_next reviews-block__button" type="button">next</button>
@@ -257,6 +261,8 @@
     <iframe class="map-interactive__link"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1272738780704!2d30.32000412282385!3d59.93938266693968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1507061623630"
             width="320" height="200" allowfullscreen></iframe>
+    <div class="map-interactive__mask">
+    </div>
   </section>
 </main>
 <footer class="page-footer">

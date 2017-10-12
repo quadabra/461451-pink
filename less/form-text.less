@@ -28,27 +28,47 @@
 @media (min-width: @tablet-width) {
   .form-text {
     .container;
+    box-sizing: border-box;
+    height: 293px;
+    margin-top: 65px;
+    padding: 0;
     border: 2px solid @midgray;
     position: relative;
-    margin-top: 30px;
   }
 
   .form-text__label {
     margin: 0;
     position: absolute;
+    width: 260px;
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #ffffff;
+  }
+
+  .form-text__textarea {
+    width: 500px;
+    margin: 45px auto 0 auto;
+    height: 193px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-text {
     .container;
+    margin-top: 65px;
+    min-height: 217px;
+    height: auto;
   }
 
   .form-text__container {
     width: auto;
+    min-height: 0;
+  }
+
+  .form-text__textarea {
+    height: 128px;
+    width: 820px;
+    margin-top: 42px;
   }
 }

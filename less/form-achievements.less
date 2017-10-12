@@ -80,36 +80,87 @@
 @media (min-width: @tablet-width) {
   .form-achievements {
     .container;
+    box-sizing: border-box;
+    margin-top: 65px;
+    padding-top: 10px;
+    min-height: 553px;
     border: 2px solid @midgray;
     background-color: transparent;
     position: relative;
   }
 
+  .form-achievements__list {
+    width: 100%;
+  }
+
   .form-achievements__legend {
     position: absolute;
-    top: -20px;
+    top: -10px;
     left: 50%;
+    width: 435px;
     transform: translateX(-50%);
     background-color: #ffffff;
   }
 
   .form-achievements__label {
-    margin-left: 121px;
+    margin-left: 118px;
+
+    &::before {
+      left: -60px;
+      top: -4px;
+    }
+
+    &::after {
+      left: -51px;
+      top: 7px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .form-achievements__label {
-    margin-left: 70px;
+  .form-achievements {
+    min-height: 232px;
   }
 
   .form-achievements__list {
-    width: auto;
+    width: 100%;
+    min-height: 0;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 9px;
   }
 
   .form-achievements__list > li {
-    flex-basis: 33%;
+    min-height: 0;
+    margin-top: 53px;
+    margin-left: 97px;
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 1;
+      margin-left: 116px;
+    }
+
+    &:nth-child(4) {
+      order: 4;
+      margin-left: 155px;
+    }
+
+    &:nth-child(5) {
+      order: 2;
+      margin-left: 114px;
+    }
+
+    &:nth-child(6) {
+      order: 5;
+      margin-left: 123px;
+    }
+  }
+
+  .form-achievements__label {
+    .reset;
   }
 }

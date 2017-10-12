@@ -69,28 +69,65 @@
 @media (min-width: @tablet-width) {
   .form-app {
     .container;
+    box-sizing: border-box;
+    margin-top: 0;
+    padding-top: 15px;
+    min-height: 299px;
     border: 2px solid @midgray;
     background-color: #ffffff;
-    margin-top: 30px;
     position: relative;
   }
 
   .form-app__legend {
     position: absolute;
-    top: -20px;
+    top: -10px;
     left: 50%;
+    width: 365px;
     transform: translateX(-50%);
     background-color: #ffffff;
+  }
+
+  .form-app__label {
+    margin-left: 100px;
+
+    &::before {
+      left: -60px;
+      top: -5px;
+    }
+
+    &::after {
+      left: -48px;
+      top: 7px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-app {
-    flex-basis: 435px;
+    width: 435px;
+    height: 300px;
     margin: 0;
+    margin-left: auto;
+    margin-top: 28px;
   }
 
   .form-app__list {
     width: auto;
+    margin-top: 14px;
+    margin-left: 14px;
+  }
+
+  .form-app__label {
+    margin-top: 44px;
+
+    &::before {
+      left: -60px;
+      top: -4px;
+    }
+
+    &::after {
+      left: -48px;
+      top: 8px;
+    }
   }
 }
