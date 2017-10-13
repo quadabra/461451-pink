@@ -41,7 +41,11 @@
     <h2 class="photo-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
     <div class="photos-list__panorama">
       <figure class="photos-list__panorama-container">
-        <img class="photos-list__panorama-image" src="img/panorama-mobile@1x.jpg" alt="Панорама дня" width="320" height="137">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+          <img class="photos-list__panorama-image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня" width="320" height="137">
+        </picture>
         <figcaption class="photos-list__panorama-description">
           <h3 class="photos-list__panorama-name">Анна <span class="photos-list__time">(5 минут назад)</span></h3>
           <p class="photos-list__panorama-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -52,7 +56,11 @@
     <ul class="photos-list">
       <li class="photos-list__item">
         <figure class="photos-list__image-container">
-          <img class="photos-list__image" src="img/photo-car-mobile@1x.jpg" alt="Фото" width="280" height="180">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+            <img class="photos-list__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото">
+          </picture>
           <figcaption class="photos-list__description">
             <h3 class="photos-list__name">Левон <span class="photos-list__time">(5 часов назад)</span></h3>
             <p class="photos-list__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -62,7 +70,11 @@
       </li>
       <li class="photos-list__item">
         <figure class="photos-list__image-container">
-          <img class="photos-list__image" src="img/photo-drumset-mobile@1x.jpg" alt="Фото" width="280" height="180">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+            <img class="photos-list__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото" width="280" height="180">
+          </picture>
           <figcaption class="photos-list__description">
             <h3 class="photos-list__name">Антон <span class="photos-list__time">(12 часов назад)</span></h3>
             <p class="photos-list__text">Соседи будут рады!</p>
@@ -72,7 +84,11 @@
       </li>
       <li class="photos-list__item">
         <figure class="photos-list__image-container">
-          <img class="photos-list__image" src="img/photo-window-mobile@1x.jpg" alt="Фото" width="280" height="180">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+            <img class="photos-list__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото" width="280" height="180">
+          </picture>
           <figcaption class="photos-list__description">
             <h3 class="photos-list__name">Борис <span class="photos-list__time">(20 часов назад)</span></h3>
             <p class="photos-list__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -82,7 +98,11 @@
       </li>
       <li class="photos-list__item">
         <figure class="photos-list__image-container">
-          <img class="photos-list__image" src="img/photo-fair-mobile@1x.jpg" alt="Фото" width="280" height="180">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+            <img class="photos-list__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото" width="280" height="180">
+          </picture>
           <figcaption class="photos-list__description">
             <h3 class="photos-list__name">Сергей <span class="photos-list__time">(25 часов назад)</span></h3>
             <p class="photos-list__text">Самая кубанская в мире!</p>
@@ -92,7 +112,11 @@
       </li>
       <li class="photos-list__item">
         <figure class="photos-list__image-container">
-          <img class="photos-list__image" src="img/photo-pov-mobile@1x.jpg" alt="Фото" width="280" height="180">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+            <img class="photos-list__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото" width="280" height="180">
+          </picture>
           <figcaption class="photos-list__description">
             <h3 class="photos-list__name">Максим <span class="photos-list__time">(40 часов назад)</span></h3>
             <p class="photos-list__text">Где снег-то?</p>
@@ -102,7 +126,11 @@
       </li>
       <li class="photos-list__item">
         <figure class="photos-list__image-container">
-          <img class="photos-list__image" src="img/photo-wing-mobile@1x.jpg" alt="Фото" width="280" height="180">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+            <img class="photos-list__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото" width="280" height="180">
+          </picture>
           <figcaption class="photos-list__description">
             <h3 class="photos-list__name">Надежда <span class="photos-list__time">(45 часов назад)</span></h3>
             <p class="photos-list__text">Всем GM и взаимные лайки!</p>
@@ -117,7 +145,11 @@
       </header>
       <form class="photo-upload__form photo-post" action="upload" method="post">
         <div class="photo-post__preview-container">
-          <img class="photo-post__preview" src="img/photo-road-mobile@1x.jpg" alt="фото для загрузки" width="280" height="374">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="photo-post__preview" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="фото для загрузки">
+          </picture>
         </div>
         <div class="photo-post__container">
           <p class="photo-post__filters filter">
