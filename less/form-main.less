@@ -6,6 +6,11 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -65px;
+
+  @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 700px auto;
+  }
 }
 
 .form-main__form-title {
@@ -73,6 +78,11 @@
     background-image: url("../img/custom/back-tablet@1x.jpg");
     background-position: center -109px;
     background-size: cover;
+
+    @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .form-main__form-title {
@@ -143,6 +153,11 @@
     background-position: center -110px;
     background-size: auto;
     flex-basis: 100%;
+
+    @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+    }
   }
 
   .form-main__form {
