@@ -53,8 +53,17 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: @nav-bg;
-  border-bottom: 1px solid darken(@nav-bg, 30%);
-  border-top: 1px solid lighten(@nav-bg, 10%);
+  border-bottom: 1px solid #000001;
+  border-top: 1px solid #485461;
+
+  &:hover,
+  &:focus {
+    color: @fontcolor2;
+  }
+
+  &:active {
+    color: @fontcolor2transparency;
+  }
 }
 
 .site-navigation__toggle {
@@ -74,7 +83,7 @@
 
   .site-navigation__container_minimized {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-size: contain;
+    background-size: auto;
 
     @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -130,6 +139,15 @@
     text-transform: none;
     font-size: 18px;
     font-weight: 400;
+    height: 50px;
+
+    &:active {
+      color: @fontwhitetransparency;
+    }
+  }
+
+  .site-navigation__list-link_current {
+    border-bottom: 2px solid white;
   }
 
   .site-navigation__container_minimized {
