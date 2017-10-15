@@ -98,11 +98,45 @@
   }
 }
 
+.site-navigation__toggle-image {
+  fill: #ffffff;
+}
+
 .site-navigation__toggle {
   display: block;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
   width: 50px;
   height: 25px;
   z-index: 2;
+
+  &:hover .site-navigation__toggle-image {
+    fill: @fontcolor2;
+  }
+
+  &:active .site-navigation__toggle-image {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.site-navigation__toggle-image_burger {
+  margin-top: 3px;
+}
+
+.site-navigation__toggle-image_cross {
+  margin-left: 14px;
+  margin-top: 3px;
+  display: none;
+}
+
+.site-navigation__toggle_active .site-navigation__toggle-image_burger {
+  display: none;
+}
+
+.site-navigation__toggle_active .site-navigation__toggle-image_cross {
+  display: block;
 }
 
 @media (min-width: @tablet-width) {

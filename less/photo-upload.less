@@ -54,17 +54,41 @@
   background: none;
   font-size: 18px;
   font-weight: 700;
+  outline: none;
 }
 
 .photo-upload__btn_submit {
   border: 3px solid @fontcolor2;
   color: @fontcolor2;
+
+  &:hover,
+  &:focus {
+    background-color: @fontcolor2;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: @fontcolor2;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .photo-upload__btn_reset {
   margin-top: 12px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   color: rgba(40, 54, 69, 0.1);
+
+  &:hover,
+  &:focus {
+    border-color: #b5b9be;
+    color: #b5b9be;
+  }
+
+  &:active {
+    border-color: #b5b9be;
+    background-color: #b5b9be;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .photo-post__preview {
@@ -150,7 +174,7 @@
 
   .photo-upload__container {
     margin-left: 0;
-    margin-top: 116px;
+    margin-top: 104px;
     width: 410px;
     min-height: 0;
     display: flex;
