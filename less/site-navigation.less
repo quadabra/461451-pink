@@ -48,17 +48,19 @@
 
 .site-navigation__link-logo {
   z-index: 2;
-  align-self: flex-start;
-  margin-top: 28px;
 }
 
 .site-navigation__link-image {
   fill: white;
 }
 
-.site-navigation__link-image:hover,
-.site-navigation__link-image:focus {
+.site-navigation__link-logo:hover .site-navigation__link-image,
+.site-navigation__link-logo:focus .site-navigation__link-image {
   fill: @fontcolor2;
+}
+
+.site-navigation__link-logo:active .site-navigation__link-image {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .site-navigation__list_hidden {
@@ -106,6 +108,12 @@
 @media (min-width: @tablet-width) {
   .site-navigation__container {
     height: 109px;
+  }
+
+  .site-navigation__link-logo {
+    z-index: 2;
+    align-self: flex-start;
+    margin-top: 28px;
   }
 
   .site-navigation {
