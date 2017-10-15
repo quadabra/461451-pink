@@ -96,3 +96,39 @@ body {
     display: block;
   }
 }
+
+.element-desktop {
+  display: none;
+}
+
+.element-tablet {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .element-desktop {
+    display: none;
+  }
+
+  .element-mobile {
+    display: none;
+  }
+
+  .element-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 960px) {
+  .element-mobile {
+    display: none;
+  }
+
+  .element-tablet {
+    display: none;
+  }
+
+  .element-desktop {
+    display: block;
+  }
+}

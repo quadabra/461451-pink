@@ -48,13 +48,16 @@
 
 .site-navigation__link-logo {
   z-index: 2;
+  align-self: flex-start;
+  margin-top: 28px;
 }
 
 .site-navigation__link-image {
   fill: white;
 }
 
-.site-navigation__link-image:hover {
+.site-navigation__link-image:hover,
+.site-navigation__link-image:focus {
   fill: @fontcolor2;
 }
 
@@ -175,6 +178,7 @@
 
   .site-navigation__container {
     width: auto;
+    padding: 0;
   }
 
   .site-navigation__list_hidden {
