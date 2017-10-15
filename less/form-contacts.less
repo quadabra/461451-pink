@@ -73,15 +73,15 @@
   }
 
   .form-contacts__input_phone {
-    background-image: linear-gradient(to left, @midgray 60px, white 60px, white 100%), url("../img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg"), linear-gradient(to left, @midgray 60px, white 60px, white 100%);
     background-repeat: no-repeat, no-repeat;
-    background-position: center left;
+    background-position: 96% center;
   }
 
   .form-contacts__input_email {
-    background-image: linear-gradient(to left, @midgray 60px, white 60px, white 100%), url("../img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg"), linear-gradient(to left, @midgray 60px, white 60px, white 100%);
     background-repeat: no-repeat, no-repeat;
-    background-position: center, center left;
+    background-position: 96% center;
   }
 }
 
@@ -109,5 +109,13 @@
 
   .form-contacts__input {
     width: 375px;
+  }
+
+  .form-contacts__input_phone {
+    background-position: 94.5% center;
+  }
+
+  .form-contacts__input_email {
+    background-position: 94.5% center;
   }
 }
