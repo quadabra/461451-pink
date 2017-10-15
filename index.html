@@ -11,7 +11,7 @@
   <div class="navigation-wrapper">
     <nav class="site-navigation">
       <div class="site-navigation__container">
-        <a>
+        <a class="site-navigation__link-logo">
           <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" alt="Логотип PINK" width="75" height="22">
         </a>
         <button class="site-navigation__toggle"><span class="visually-hidden">Меню</span></button>
@@ -112,15 +112,15 @@
     <div class="reviews-block__container">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
       <div class="reviews-block__slider-container">
-        <input class="reviews-block__slider-input first-slide" type="radio" name="rev-slider" value="first-slide" id="first-slide">
-        <label for="first-slide"></label>
-        <input class="reviews-block__slider-input second-slide" type="radio" name="rev-slider" value="second-slide" id="second-slide">
-        <label for="second-slide"></label>
-        <input class="reviews-block__slider-input third-slide" type="radio" name="rev-slider" value="third-slide" id="third-slide">
-        <label for="third-slide"></label>
+        <input class="visually-hidden reviews-block__slider-input" type="radio" name="rev-slider" value="first-slide" id="first-slide" checked>
+        <label class="reviews-block__slider-label" for="first-slide"></label>
+        <input class="visually-hidden reviews-block__slider-input" type="radio" name="rev-slider" value="second-slide" id="second-slide">
+        <label class="reviews-block__slider-label" for="second-slide"></label>
+        <input class="visually-hidden reviews-block__slider-input" type="radio" name="rev-slider" value="third-slide" id="third-slide">
+        <label class="reviews-block__slider-label" for="third-slide"></label>
       </div>
       <div class="reviews-block__list-container">
-        <button class="reviews-block__button_back reviews-block__button" type="button">back</button>
+        <button class="reviews-block__button_back reviews-block__button" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
         <ul class="reviews-block__list">
           <li class="reviews-block__list-item">
             <h3 class="reviews-block__author">Николай Петров<span class="reviews-block__author_hidden">25лет, водитель трамвая</span></h3>
@@ -141,7 +141,7 @@
                 class="reviews-block__element-hidden">&raquo;</span></p>
           </li>
         </ul>
-        <button class="reviews-block__button_next reviews-block__button" type="button">next</button>
+        <button class="reviews-block__button_next reviews-block__button" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
       </div>
     </div>
   </section>
@@ -234,13 +234,15 @@
         </td>
       </tr>
     </table>
-    <div class="price-list__slider">
-      <label class="price-list__slider-button" for="price-slide_1"><input type="radio" name="price-button" id="price-slide_1"><span
-        class="visually-hidden">Базовый</span></label>
-      <label class="price-list__slider-button" for="price-slide_2"><input type="radio" name="price-button" id="price-slide_2"><span
-        class="visually-hidden">Стандарт</span></label>
-      <label class="price-list__slider-button" for="price-slide_3"><input type="radio" name="price-button" id="price-slide_3"><span
-        class="visually-hidden">Про</span></label>
+    <div class="price-list__slider-container">
+      <div class="price-list__slider">
+        <input class="price-list__slider-input visually-hidden" type="radio" name="price-button" id="price-slide_1">
+        <label class="price-list__slider-button" for="price-slide_1"><span class="visually-hidden">Базовый</span></label>
+        <input class="price-list__slider-input visually-hidden" type="radio" name="price-button" id="price-slide_2" checked>
+        <label class="price-list__slider-button" for="price-slide_2"><span class="visually-hidden">Стандарт</span></label>
+        <input class="price-list__slider-input visually-hidden" type="radio" name="price-button" id="price-slide_3">
+        <label class="price-list__slider-button" for="price-slide_3"><span class="visually-hidden">Про</span></label>
+      </div>
     </div>
   </section>
   <section class="contacts-block">

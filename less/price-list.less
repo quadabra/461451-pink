@@ -53,13 +53,43 @@
   vertical-align: baseline;
 }
 
+.price-list__slider-container {
+  display: flex;
+}
+
 .price-list__slider {
-  text-align: center;
-  margin-top: 35px;
-  margin-bottom: 40px;
+  display: flex;
+  margin: 35px auto 45px auto;
+}
+
+.price-list__slider-button {
+  margin: 4px 6.5px 0 6.5px;
+  display: block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #f2f2f2;
+  border-radius: 50%;
+  background-color: #bec2c7;
+  outline: none;
+}
+
+.price-list__slider-button:hover,
+.price-list__slider-button:focus {
+  background-color: #7e868f;
+}
+
+.price-list__slider-button:active {
+  background-color: #e9ebec;
+}
+
+.price-list__slider-input:checked + .price-list__slider-button {
+  border-color: @fontcolor1;
+  background-color: #f2f2f2;
 }
 
 .price-list__icon_yes {
+  margin-top: 12px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 0;
@@ -68,10 +98,45 @@
 }
 
 .price-list__icon_no {
+  margin-top: 7px;
+  margin-right: 2px;
   display: inline-block;
   vertical-align: middle;
   width: 27px;
   height: 26px;
+}
+
+.price-list__row-data {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-list__head_popular {
+  position: relative;
+}
+
+.price-list__head_popular::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 74px;
+  height: 73px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+}
+
+.price-list__head_popular::after {
+  content: "хит";
+  display: block;
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 16px;
+  left: 11px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 @media (min-width: @tablet-width) {
@@ -132,6 +197,21 @@
     margin: 0;
     margin-left: 15px;
     line-height: 40px;
+  }
+
+  .price-list__icon_no,
+  .price-list__icon_yes {
+    margin: 0;
+    margin-left: 7px;
+  }
+
+  .price-list__head_popular::before {
+    background-image: url("../img/bg-hit-tablet.svg");
+  }
+
+  .price-list__head_popular::after {
+    top: 10px;
+    left: 5px;
   }
 }
 
