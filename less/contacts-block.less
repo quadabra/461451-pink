@@ -54,6 +54,18 @@
   font-weight: 300;
   color: @fontcolor2;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: @fontcolor1;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: @fontcolor1;
+    text-decoration: none;
+    opacity: 0.3;
+  }
 }
 
 .contacts-block__item:last-child {
