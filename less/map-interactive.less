@@ -2,20 +2,19 @@
   .wrapper;
   min-height: 200px;
   background-color: @midgray;
-  background-image: url("../img/bg-map-mobile@1x.png");
+  background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
+  background-size: auto;
   position: relative;
 
   @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
-    background-size: contain;
+    background-size: 320px auto;
   }
 }
 
 .map-interactive__link {
-  display: none;
   width: 100%;
   min-height: 200px;
   border: none;
@@ -53,7 +52,7 @@
 
 @media (min-width: @tablet-width) {
   .map-interactive {
-    min-height: 375px;
+    height: 375px;
     background-image: url("../img/bg-map-tablet@1x.jpg");
 
     @media (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
