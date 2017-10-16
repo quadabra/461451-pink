@@ -42,12 +42,31 @@
   }
 
   .effect__image {
-    width: 298px;
-    height: 345px;
+    margin-top: 59px;
+    width: 240px;
+    height: 277px;
   }
 
   .effect__image-container {
     width: 50%;
+    position: relative;
+  }
+
+  .effect__image-text {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    width: 204px;
+    height: 204px;
+    font-size: 96px;
+    font-weight: 700;
+    color: @fontcolor2;
+    border: 14px solid @fontcolor2;
+    border-radius: 50%;
+    top: 114px;
+    left: 18px;
+    text-align: center;
+    line-height: 167px;
   }
 }
 
@@ -60,6 +79,7 @@
 
   .effect__image-container {
     width: 360px;
+    position: relative;
   }
 
   .effect__text-container {
@@ -83,5 +103,28 @@
     font-size: 18px;
     line-height: 30px;
     margin-top: 16px;
+  }
+
+  .effect__image {
+    margin-top: 0;
+    width: 298px;
+    height: 345px;
+  }
+
+  .effect__image-text {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    width: 255px;
+    height: 255px;
+    font-size: 120px;
+    font-weight: 700;
+    color: @fontcolor2;
+    border: 18px solid @fontcolor2;
+    border-radius: 50%;
+    top: 68px;
+    left: 22px;
+    text-align: center;
+    line-height: 200px;
   }
 }

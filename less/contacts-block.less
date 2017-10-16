@@ -1,6 +1,7 @@
 .contacts-block {
   .wrapper;
-  padding-top: 22px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .contacts-block__container {
@@ -32,7 +33,7 @@
 }
 
 .contacts-block__list-title {
-  margin: 10px auto 2px auto;
+  margin: 10px auto 1px auto;
   font-size: 18px;
   font-weight: 700;
   color: @fontcolor1;
@@ -43,7 +44,7 @@
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: 300;
-  line-height: 32px;
+  line-height: 30px;
   color: @fontcolor2;
   text-decoration: none;
 }
@@ -55,10 +56,15 @@
   text-decoration: none;
 }
 
+.contacts-block__item:last-child {
+  padding-top: 5px;
+}
+
 @media (min-width: @tablet-width) {
   .contacts-block {
     min-height: 360px;
     padding-top: 45px;
+    padding-bottom: 0;
   }
 
   .contacts-block__title {
@@ -78,6 +84,11 @@
   .contacts-block__item:last-child {
     flex-basis: 50%;
     margin: 23px auto 0 auto;
+    padding-top: 0;
+  }
+
+  .contacts-block__item:last-child .contacts-block__list-text {
+    margin-top: 7px;
   }
 
   .contacts-block__link {

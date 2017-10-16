@@ -45,6 +45,8 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
+  outline: none;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -71,6 +73,15 @@
     left: -61px;
     top: 6px;
   }
+}
+
+.form-achievements__label:hover::before,
+.form-achievements__label:focus::before {
+  border-color: @fontcolor1;
+}
+
+.form-achievements__label:active::before {
+  border-color: @fontcolor2;
 }
 
 .form-achievements__input:checked ~ .form-achievements__label::after {

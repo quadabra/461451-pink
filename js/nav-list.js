@@ -7,4 +7,5 @@ navButton.addEventListener('click', function (evt) {
   evt.preventDefault();
   navList.classList.toggle('site-navigation__list_hidden');
   navCont.classList.toggle('site-navigation__container_minimized');
+  navButton.classList.toggle('site-navigation__toggle_active');
 });

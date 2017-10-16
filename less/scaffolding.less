@@ -1,6 +1,8 @@
 @nav-bg: #243344;
 @fontcolor1: #283645;
 @fontcolor2: #d22856;
+@fontcolor2transparency: rgba(210, 40, 86, 0.3);
+@fontwhitetransparency: rgba(255, 255, 255, 0.3);
 @btncolorgreen: #26ac6e;
 @btncolorgreenhover: #159c5e;
 @btncolorgreenactive: @btncolorgreenhover;
@@ -12,19 +14,19 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/opensans.woff2"), url("/fonts/opensans.woff");
+  src: url("../fonts/opensans.woff2"), url("../fonts/opensans.woff");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/opensanslight.woff2"), url("/fonts/opensanslight.woff");
+  src: url("../fonts/opensanslight.woff2"), url("../fonts/opensanslight.woff");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/opensansbold.woff2"), url("/fonts/opensansbold.woff");
+  src: url("../fonts/opensansbold.woff2"), url("../fonts/opensansbold.woff");
   font-weight: 700;
 }
 
@@ -91,6 +93,42 @@ body {
   display: none;
 
   @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.element-desktop {
+  display: none;
+}
+
+.element-tablet {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .element-desktop {
+    display: none;
+  }
+
+  .element-mobile {
+    display: none;
+  }
+
+  .element-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 960px) {
+  .element-mobile {
+    display: none;
+  }
+
+  .element-tablet {
+    display: none;
+  }
+
+  .element-desktop {
     display: block;
   }
 }

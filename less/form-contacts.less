@@ -71,6 +71,18 @@
     text-transform: uppercase;
     color: @fontcolor2;
   }
+
+  .form-contacts__input_phone {
+    background-image: url("../img/icon-phone.svg"), linear-gradient(to left, @midgray 60px, white 60px, white 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 96% center;
+  }
+
+  .form-contacts__input_email {
+    background-image: url("../img/icon-mail.svg"), linear-gradient(to left, @midgray 60px, white 60px, white 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 96% center;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -97,5 +109,13 @@
 
   .form-contacts__input {
     width: 375px;
+  }
+
+  .form-contacts__input_phone {
+    background-position: 94.5% center;
+  }
+
+  .form-contacts__input_email {
+    background-position: 94.5% center;
   }
 }
