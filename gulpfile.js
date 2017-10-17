@@ -15,17 +15,13 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var run = require("run-sequence");
-var uglify = require('gulp-uglify');
-var pump = require('pump');
+var uglify = require('gulp-uglifyjs');
 
-gulp.task('js', function (cb) {
-  pump([
-      gulp.src('js/*.js'),
-      uglify(),
-      gulp.dest('build/js')
-    ],
-    cb
-  );
+gulp.task('uglify', function() {
+  gulp.src('js/nav-list.js')
+    .pipe(uglify())
+    .pipe(rename("nav-list.min.js"))
+    .pipe(gulp.dest('js'))
 });
 
 gulp.task("style", function () {
@@ -92,7 +88,8 @@ gulp.task("html", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
-    "img/**"
+    "img/**",
+    "js/**"
   ], {
     base: "."
   })
