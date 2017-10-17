@@ -40,7 +40,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: linear-gradient(to bottom, black);
+  background: #000000;
   opacity: 0.3;
   z-index: 1;
   pointer-events: none;
@@ -48,6 +48,7 @@
 
 .site-navigation__link-logo {
   z-index: 2;
+  margin-right: auto;
 }
 
 .site-navigation__link-image {
@@ -109,7 +110,7 @@
   outline: none;
   background: none;
   width: 50px;
-  height: 25px;
+  height: 50px;
   z-index: 2;
 
   &:hover .site-navigation__toggle-image {
@@ -122,7 +123,10 @@
 }
 
 .site-navigation__toggle-image_cross {
+  margin-left: 14px;
   display: none;
+  position: relative;
+  bottom: 3px;
 }
 
 .site-navigation__toggle_active .site-navigation__toggle-image_burger {
@@ -159,13 +163,19 @@
   }
 
   .site-navigation__toggle-image_burger {
-    margin-top: 3px;
+    position: relative;
+    top: 3px;
   }
 
   .site-navigation__toggle-image_cross {
     margin-left: 14px;
-    margin-top: 3px;
     display: none;
+    position: relative;
+    top: 2px;
+  }
+
+  .site-navigation__toggle {
+    margin: 0;
   }
 }
 
@@ -202,7 +212,10 @@
   }
 
   .site-navigation {
-    .container;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 960px;
+    padding: 0 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -214,7 +227,10 @@
     flex-basis: auto;
     min-width: 620px;
     margin-left: auto;
+    display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
     z-index: 2;
   }
 
