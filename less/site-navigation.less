@@ -48,6 +48,7 @@
 
 .site-navigation__link-logo {
   z-index: 2;
+  margin-right: auto;
 }
 
 .site-navigation__link-image {
@@ -103,14 +104,13 @@
 }
 
 .site-navigation__toggle {
-  margin-bottom: 8px;
   display: block;
   padding: 0;
   border: none;
   outline: none;
   background: none;
   width: 50px;
-  height: 25px;
+  height: 50px;
   z-index: 2;
 
   &:hover .site-navigation__toggle-image {
@@ -123,8 +123,10 @@
 }
 
 .site-navigation__toggle-image_cross {
-  margin-left: 15px;
+  margin-left: 14px;
   display: none;
+  position: relative;
+  bottom: 3px;
 }
 
 .site-navigation__toggle_active .site-navigation__toggle-image_burger {
@@ -161,13 +163,15 @@
   }
 
   .site-navigation__toggle-image_burger {
-    margin-top: 3px;
+    position: relative;
+    top: 3px;
   }
 
   .site-navigation__toggle-image_cross {
     margin-left: 14px;
-    margin-top: 3px;
     display: none;
+    position: relative;
+    top: 2px;
   }
 
   .site-navigation__toggle {
@@ -208,7 +212,10 @@
   }
 
   .site-navigation {
-    .container;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 960px;
+    padding: 0 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
