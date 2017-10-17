@@ -32,6 +32,23 @@
   margin: 0;
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+    display: block;
+    position: absolute;
+    width: 140px;
+    height: 36px;
+    right: 6.25%;
+    top: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 36px;
+    text-align: center;
+    background-color: @fontcolor2;
+  }
 }
 
 .photos-list__panorama-description {
@@ -125,6 +142,11 @@
     min-height: 300px;
   }
 
+  .photos-list__panorama-container::before {
+    top: 58px;
+    right: 3%;
+  }
+
   .photos-list__panorama-image {
     min-height: 510px;
   }
@@ -195,9 +217,16 @@
 
   .photos-list__panorama-container {
     min-height: 506px;
+    width: 1200px;
+
+    &::before {
+      top: 55px;
+      right: 130px;
+    }
   }
 
   .photos-list__panorama-image {
+    width: 1200px;
     height: auto;
     min-height: 0;
   }
