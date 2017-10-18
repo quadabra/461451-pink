@@ -219,10 +219,11 @@
               </svg>
               <span class="visually-hidden">Контраст</span>
             </button>
-            <input class="filter__slider filter__slider_mobile" type="range" name="intensity" value="80" min="0" max="100" step="1">
+            <label for="filter_mobile" class="visually-hidden">Интенсивность выбранного фильтра</label>
+            <input class="filter__slider filter__slider_mobile input-range" id="filter_mobile" type="range" name="intensity" value="80" min="0" max="100" step="1">
           </p>
-          <div class="filter-desktop">
-            <div class="filter-desktop__container">
+          <div class="filter-wide">
+            <div class="filter-wide__container">
               <label class="filter__label filter__label_crop" for="desktop-crop">
                 <svg class="filter__label-image_crop filter__label-image" width="24" height="24">
                   <use xlink:href="#icon-editor-crop"></use>
@@ -231,7 +232,7 @@
               </label>
               <input class="filter__slider filter__slider_desktop input-range" type="range" name="intensity" value="27" min="0" max="100" step="1" id="desktop-crop">
             </div>
-            <div class="filter-desktop__container">
+            <div class="filter-wide__container">
               <label class="filter__label filter__label_fill" for="desktop-fill">
                 <svg class="filter__label-image_fill filter__label-image" width="24" height="24">
                   <use xlink:href="#icon-editor-fill"></use>
@@ -240,7 +241,7 @@
               </label>
               <input class="filter__slider filter__slider_desktop input-range" type="range" name="intensity" value="90" min="0" max="100" step="1" id="desktop-fill">
             </div>
-            <div class="filter-desktop__container">
+            <div class="filter-wide__container">
               <label class="filter__label filter__label_contrast" for="desktop-contrast">
                 <svg class="filter__label-image_contrast filter__label-image" width="16" height="16">
                   <use xlink:href="#icon-editor-contrast"></use>
