@@ -40,6 +40,12 @@
   border-radius: @thumb-radius;
   background: @thumb-color;
   cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: @fontcolor2;
+  }
 }
 
 input[type="range"] {
