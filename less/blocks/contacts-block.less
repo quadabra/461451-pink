@@ -1,0 +1,170 @@
+.contacts-block {
+  .wrapper;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.contacts-block__container {
+  .container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts-block__title {
+  width: 80%;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contacts-block__contacts {
+  .no-list;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contacts-block__item {
+  width: 250px;
+  text-align: center;
+}
+
+.contacts-block__list-title {
+  margin: 10px auto 1px auto;
+  font-size: 18px;
+  font-weight: 700;
+  color: @fontcolor1;
+}
+
+.contacts-block__list-text {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: @fontcolor2;
+  text-decoration: none;
+}
+
+.contacts-block__link {
+  font-size: 24px;
+  font-weight: 300;
+  color: @fontcolor2;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: @fontcolor1;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: @fontcolor1;
+    text-decoration: none;
+    opacity: 0.3;
+  }
+}
+
+.contacts-block__item:last-child {
+  padding-top: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-block {
+    min-height: 360px;
+    padding-top: 45px;
+    padding-bottom: 0;
+  }
+
+  .contacts-block__title {
+    font-size: 40px;
+    line-height: 49px;
+    margin: 0;
+    width: 376px;
+  }
+
+  .contacts-block__contacts {
+    margin-top: 31px;
+    width: 570px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contacts-block__item:last-child {
+    flex-basis: 50%;
+    margin: 23px auto 0 auto;
+    padding-top: 0;
+  }
+
+  .contacts-block__item:last-child .contacts-block__list-text {
+    margin-top: 7px;
+  }
+
+  .contacts-block__link {
+    line-height: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-block {
+    min-height: 300px;
+    padding-top: 65px;
+  }
+
+  .contacts-block__contacts {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .contacts-block__item {
+    .reset;
+    margin-top: 12px;
+    flex-basis: 32%;
+    align-items: center;
+  }
+
+  .contacts-block__list-title {
+    margin: 0 auto;
+    width: 220px;
+    line-height: 50px;
+  }
+
+  .contacts-block__list-text {
+    margin: 6px auto 0 auto;
+    width: 220px;
+    line-height: 30px;
+  }
+
+  .contacts-block__item:nth-child(2) {
+    order: 1;
+    margin-right: 10px;
+  }
+
+  .contacts-block__item:last-child {
+    flex-basis: 33%;
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 30px;
+  }
+
+  .contacts-block__item:last-child .contacts-block__list-title {
+    margin-top: 12px;
+  }
+
+  .contacts-block__item:last-child .contacts-block__list-text {
+    margin-top: 9px;
+  }
+
+  .contacts-block__item:nth-child(2) .contacts-block__list-title {
+    margin-left: 52px;
+  }
+
+  .contacts-block__title {
+    font-size: 50px;
+    line-height: 60px;
+    width: 480px;
+  }
+}

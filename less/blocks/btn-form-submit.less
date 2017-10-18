@@ -1,0 +1,28 @@
+.btn-form-submit {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  height: 63px;
+  border: none;
+  background-color: @btncolorgreen;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: @btncolorgreenhover;
+  }
+
+  &:active {
+    background-color: @btncolorgreenactive;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @btncolordisabled;
+  }
+}

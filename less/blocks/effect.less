@@ -1,0 +1,130 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: block;
+    .wrapper;
+    min-height: 400px;
+  }
+
+  .effect__container {
+    .container;
+    display: flex;
+  }
+
+  .effect__text-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 96px;
+  }
+
+  .effect__title {
+    margin: 0;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    width: 168px;
+  }
+
+  .effect__text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    color: @fontcolor1;
+  }
+
+  .effect__link {
+    font-size: 14px;
+    color: @fontcolor2;
+  }
+
+  .effect__image {
+    margin-top: 59px;
+    width: 240px;
+    height: 277px;
+  }
+
+  .effect__image-container {
+    width: 50%;
+    position: relative;
+  }
+
+  .effect__image-text {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    width: 204px;
+    height: 204px;
+    font-size: 96px;
+    font-weight: 700;
+    color: @fontcolor2;
+    border: 14px solid @fontcolor2;
+    border-radius: 50%;
+    top: 114px;
+    left: 18px;
+    text-align: center;
+    line-height: 167px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    background-color: @graycolor;
+    padding-top: 67px;
+    min-height: 411px;
+  }
+
+  .effect__image-container {
+    width: 360px;
+    position: relative;
+  }
+
+  .effect__text-container {
+    width: 550px;
+    margin-left: 8px;
+    padding-top: 90px;
+  }
+
+  .effect__title {
+    width: 100%;
+  }
+
+  .effect__text {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    width: 529px;
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 16px;
+  }
+
+  .effect__image {
+    margin-top: 0;
+    width: 298px;
+    height: 345px;
+  }
+
+  .effect__image-text {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    width: 255px;
+    height: 255px;
+    font-size: 120px;
+    font-weight: 700;
+    color: @fontcolor2;
+    border: 18px solid @fontcolor2;
+    border-radius: 50%;
+    top: 68px;
+    left: 22px;
+    text-align: center;
+    line-height: 200px;
+  }
+}

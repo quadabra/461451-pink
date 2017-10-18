@@ -1,0 +1,150 @@
+.filter {
+  width: 87.5%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 22px;
+}
+
+.filter__btn {
+  margin: 0 auto;
+  flex-shrink: 0;
+  display: block;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.filter__btn:first-of-type {
+  margin-left: 10px;
+}
+
+.filter__btn:last-of-type {
+  margin-right: 22px;
+}
+
+.filter__image {
+  fill: #b5b9be;
+}
+
+.filter__btn_crop:hover .filter__image_crop,
+.filter__btn_fill:hover .filter__image_fill,
+.filter__btn_contrast:hover .filter__image_contrast,
+.filter__btn_crop:focus .filter__image_crop,
+.filter__btn_fill:focus .filter__image_fill,
+.filter__btn_contrast:focus .filter__image_contrast {
+  fill: #8d949b;
+}
+
+.filter__btn_crop:active .filter__image_crop,
+.filter__btn_fill:active .filter__image_fill,
+.filter__btn_contrast:active .filter__image_contrast {
+  fill: @fontcolor2;
+}
+
+.filter__btn_active .filter__image {
+  fill: @fontcolor2;
+}
+
+.filter__slider {
+  flex-basis: 100%;
+  margin-top: 23px;
+}
+
+.filter-desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .filter {
+    display: none;
+  }
+
+  .filter-desktop {
+    margin: 0 auto;
+    padding: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter-desktop__container {
+    padding-right: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    width: 275px;
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .filter__slider {
+    flex-basis: 205px;
+  }
+
+  .filter__slider_desktop {
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .filter__label {
+    display: block;
+  }
+
+  .filter__label-image {
+    fill: @fontcolor2;
+  }
+
+  .filter__label-image_crop {
+    margin-top: 8px;
+    margin-left: 4px;
+  }
+
+  .filter__label-image_fill {
+    margin-top: 14px;
+    margin-left: 4px;
+  }
+
+  .filter__label-image_contrast {
+    margin: 8px 2px 0 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .filter-desktop {
+    margin-top: 30px;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 12px;
+  }
+
+  .filter-desktop__container {
+    box-sizing: border-box;
+    padding-right: 30px;
+    width: 410px;
+    justify-content: space-between;
+  }
+
+  .filter__slider {
+    flex-basis: 290px;
+  }
+
+  .filter__label-image_crop {
+    margin: 3px 25px 0 -2px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .filter__label-image_fill {
+    margin: 9px 23px 0 0;
+    width: 48px;
+    height: 48px;
+  }
+
+  .filter__label-image_contrast {
+    margin: 1px 33px 0 5px;
+    width: 33px;
+    height: 33px;
+  }
+}
