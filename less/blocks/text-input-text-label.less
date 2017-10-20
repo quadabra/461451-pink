@@ -7,6 +7,10 @@
   border-radius: 0;
   padding-left: 20px;
   outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: @fontcolor1;
+  opacity: 1;
 
   &:hover {
     border-color: @fontcolor1;
@@ -16,13 +20,13 @@
   &:focus {
     border-color: @fontcolor2;
   }
-}
 
-.text-input::placeholder {
-  font-size: 18px;
-  font-weight: 400;
-  color: @fontcolor1;
-  opacity: 1;
+  &::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: @fontcolor1;
+    opacity: 1;
+  }
 }
 
 .text-label {
@@ -53,5 +57,12 @@
   &:active,
   &:focus {
     border-color: @fontcolor2;
+  }
+
+  &::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: @fontcolor1;
+    opacity: 1;
   }
 }
