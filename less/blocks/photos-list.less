@@ -6,7 +6,7 @@
 }
 
 .photos-list__item {
-  margin-top: 17px;
+  margin-top: 20px;
 }
 
 .photos-list__image-container {
@@ -22,58 +22,14 @@
   height: auto;
 }
 
-.photos-list__panorama {
-  margin: 0;
-  width: 100%;
-}
-
-.photos-list__panorama-container {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
-  &::before {
-    content: "Панорама дня";
-    display: block;
-    position: absolute;
-    min-width: 140px;
-    height: 36px;
-    right: 6.25%;
-    top: 0;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #ffffff;
-    line-height: 36px;
-    text-align: center;
-    background-color: @fontcolor2;
-  }
-}
-
-.photos-list__panorama-description {
-  .container;
-  padding: 0;
-  padding-bottom: 20px;
-  background-color: #f3f3f3;
-}
-
-.photos-list__panorama-image {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0;
-}
-
 .photos-list__description {
   width: 100%;
   background-color: #f3f3f3;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
 }
 
-.photos-list__name,
-.photos-list__panorama-name {
-  margin-top: 22px;
+.photos-list__name {
+  margin-top: 19px;
   margin-left: 18px;
   margin-bottom: 0;
   font-size: 14px;
@@ -88,40 +44,41 @@
   text-transform: uppercase;
 }
 
-.photos-list__text,
-.photos-list__panorama-text {
-  margin-top: 4px;
+.photos-list__text {
+  margin-top: 3px;
   margin-left: 18px;
   margin-bottom: 0;
   width: 260px;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 24px;
   color: @fontcolor1;
 }
 
-.photos-list__likes,
-.photos-list__panorama-likes {
-  display: block;
-  position: relative;
-  margin-left: 50px;
-  margin-top: 10px;
+.photos-list__likes {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 100%;
+  margin-left: 17px;
+  margin-top: 12px;
   font-size: 12px;
-  line-height: 24px;
   color: @fontcolor2;
   text-transform: uppercase;
+}
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: -32px;
-    top: 6px;
-    height: 15px;
-    width: 15px;
-    background-image: url("../img/icon-heart.svg");
-    background-repeat: no-repeat;
-  }
+.photos-list__like-button {
+  .reset;
+  margin-right: 18px;
+  display: block;
+  width: 15px;
+  background-color: transparent;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  cursor: pointer;
+  order: -1;
 }
 
 @media (min-width: @tablet-width) {
@@ -142,69 +99,34 @@
     min-height: 300px;
   }
 
-  .photos-list__panorama-container::before {
-    top: 58px;
-    right: 3%;
-  }
-
-  .photos-list__panorama-image {
-    min-height: 510px;
-  }
-
-  .photos-list__panorama-name {
-    margin-left: 27px;
-    margin-top: 25px;
-  }
-
   .photos-list__name {
     margin-left: 27px;
     margin-top: 26px;
   }
 
   .photos-list__text {
-    width: 90%;
+    width: 88%;
     margin-left: 27px;
     margin-top: 4px;
-  }
-
-  .photos-list__panorama-description {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 23px;
   }
 
   .photos-list__description {
     .reset;
     min-height: 155px;
-    position: relative;
-  }
-
-  .photos-list__panorama-text {
-    order: 1;
-    width: 90%;
-    margin-left: 27px;
-    margin-top: 0;
-  }
-
-  .photos-list__panorama-likes {
-    margin: 25px 59px 0 auto;
-
-    &::before {
-      left: 106px;
-      top: 4px;
-    }
+    display: flex;
+    flex-direction: column;
   }
 
   .photos-list__likes {
-    .reset;
-    position: absolute;
-    left: 27px;
-    bottom: 22px;
+    margin-top: auto;
+    margin-left: 27px;
+    margin-bottom: 25px;
+    width: 87%;
+  }
 
-    &::before {
-      left: 228px;
-      top: 5px;
-    }
+  .photos-list__like-button {
+    order: 0;
+    margin-left: auto;
   }
 }
 
@@ -213,27 +135,6 @@
     width: auto;
     flex-basis: 300px;
     margin-bottom: 34px;
-  }
-
-  .photos-list__panorama-container {
-    min-height: 506px;
-
-    &::before {
-      top: 55px;
-      right: 130px;
-    }
-  }
-
-  .photos-list__panorama-image {
-    height: auto;
-    min-height: 0;
-  }
-
-  .photos-list__panorama-description {
-    padding-left: 0;
-    padding-right: 0;
-    width: 940px;
-    margin: 0 auto;
   }
 
   .photos-list__image {
