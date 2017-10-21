@@ -35,6 +35,8 @@
 .filter__label {
   width: 33.3333%;
   display: flex;
+  outline: none;
+  cursor: pointer;
 
   &:hover > .filter__image,
   &:focus > .filter__image {
@@ -46,8 +48,12 @@
   }
 }
 
-.filter__label_active > .filter__image {
-  fill: @imageactivecolor;
+.filter__label_active {
+  & > .filter__image,
+  &:hover > .filter__image,
+  &:focus > .filter__image {
+    fill: @imageactivecolor;
+  }
 }
 
 .filter__slider {
@@ -58,7 +64,17 @@
   background-color: transparent;
 
   &_active {
-    display: block;
+    &::-webkit-slider-thumb {
+      background-color: @imageactivecolor;
+    }
+
+    &::-moz-range-thumb {
+      background-color: @imageactivecolor;
+    }
+
+    &::-ms-thumb {
+      background-color: @imageactivecolor;
+    }
   }
 }
 
@@ -117,20 +133,6 @@
       right: -7%;
       width: 133%;
       border-bottom: 1px solid @bordercolor;
-    }
-
-    &_active {
-      &::-webkit-slider-thumb {
-        background-color: @imageactivecolor;
-      }
-
-      &::-moz-range-thumb {
-        background-color: @imageactivecolor;
-      }
-
-      &::-ms-thumb {
-        background-color: @imageactivecolor;
-      }
     }
   }
 }

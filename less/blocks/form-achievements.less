@@ -33,10 +33,6 @@
   color: @fontcolor2;
 }
 
-.form-achievements__input {
-  display: none;
-}
-
 .form-achievements__label {
   display: block;
   position: relative;
@@ -86,6 +82,10 @@
 
 .form-achievements__input:checked ~ .form-achievements__label::after {
   display: block;
+}
+
+.form-achievements__input:focus ~ .form-achievements__label::before {
+  border-color: @fontcolor1;
 }
 
 @media (min-width: @tablet-width) {

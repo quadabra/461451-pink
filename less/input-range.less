@@ -42,7 +42,6 @@
   cursor: pointer;
 
   &:hover,
-  &:focus,
   &:active {
     background: @fontcolor2;
   }
@@ -55,6 +54,10 @@
 
   &:focus {
     outline: none;
+
+    &::-webkit-slider-thumb {
+      background-color: @fontcolor2;
+    }
   }
 
   &::-webkit-slider-runnable-track {

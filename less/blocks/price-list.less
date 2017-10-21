@@ -71,7 +71,6 @@
   border: 3px solid #f2f2f2;
   border-radius: 50%;
   background-color: #bec2c7;
-  outline: none;
 }
 
 .price-list__slider-button:hover,
@@ -86,6 +85,10 @@
 .price-list__slider-input:checked + .price-list__slider-button {
   border-color: @fontcolor1;
   background-color: #f2f2f2;
+}
+
+.price-list__slider-input:focus + .price-list__slider-button {
+  background-color: #7e868f;
 }
 
 .price-list__icon-ok {
