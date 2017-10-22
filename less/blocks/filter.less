@@ -57,8 +57,8 @@
 }
 
 .filter__slider {
-  width: 85%;
-  padding: 5px 0 5px 0;
+  width: 100%;
+  padding: 5px 7.5% 5px 7.5%;
   align-self: center;
   display: none;
   background-color: transparent;
@@ -98,6 +98,7 @@
     height: 72px;
     width: 100%;
     box-sizing: border-box;
+    border-bottom: 1px solid #dddfe0;
   }
 
   .filter__image {
@@ -126,16 +127,7 @@
     height: 72px;
     box-sizing: border-box;
     display: block;
-
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: 0;
-      right: -7%;
-      width: 133%;
-      border-bottom: 1px solid @bordercolor;
-    }
+    border-bottom: 1px solid #dddfe0;
   }
 }
 
@@ -158,10 +150,5 @@
       margin-left: 5px;
       margin-top: 18px;
     }
-  }
-
-  .filter__slider::before {
-    right: -10%;
-    width: 143%;
   }
 }
